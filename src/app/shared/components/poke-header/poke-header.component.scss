@@ -1,0 +1,16 @@
+header {
+  margin: 0;
+  .poke-header {
+    &__content {
+      display: flex;
+      align-items: center;
+      height: 46px;
+      width: 100%;
+      background-color: var(--color-red-700);
+
+      .logo {
+        display: flex;
+      }
+    }
+  }
+}

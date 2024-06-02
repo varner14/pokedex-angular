@@ -1,0 +1,12 @@
+<div class="poke-search__container">
+  <input
+    class="poke-search__container__input"
+    #inputSearch
+    (keyup)="setSearch(inputSearch.value)"
+    type="text"
+    placeholder="Search"
+  />
+  <div class="poke-search__container__botao">
+    <mat-icon>search</mat-icon>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.poke-search {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #6b727a;
+    color: #ffffff;
+    min-height: 70px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: 2rem;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 40%;
+    padding: 0.525rem;
+
+    &__input {
+      border: none;
+      background: none;
+      outline: none;
+      padding: 15px;
+      color: white;
+      width: 100px;
+      font-size: 16px;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    &__botao {
+      user-select: none;
+    }
+  }
+}

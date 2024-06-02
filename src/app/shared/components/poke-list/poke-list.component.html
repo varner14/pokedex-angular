@@ -1,0 +1,22 @@
+<div class="poke-list__container">
+  @for(pokemon of pokemon; track pokemon.id){ @if(pokemon.id){
+  <a
+    class="pokemon-card"
+    routerLink="/pokemon/{{ pokemon.id }}"
+    routerLinkActive="selected"
+  >
+    <img
+      class="pokemon-card__imagem"
+      loading="lazy"
+      [src]="
+        'https://projectpokemon.org/images/normal-sprite/' +
+        pokemon.name +
+        '.gif'
+      "
+      [alt]="pokemon.name"
+    />
+    <span class="pokemon-card__nome"> {{ pokemon.name }} </span>
+    <span class="pokemon-card__numero"> #{{ leadingZeros(pokemon.id) }} </span>
+  </a>
+  } @else { Pokemon not found } }
+</div>

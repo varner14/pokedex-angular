@@ -1,0 +1,13 @@
+<main>
+  <div class="pokedex__container">
+    <div class="pokedex__container__header">
+      <poke-header />
+    </div>
+    <div class="pokedex__container__content">
+      <div class="pokedex__container__content__left-side">
+        <poke-search (emmitSearch)="getSearch($event)" />
+        <poke-list [pokemon]="getAllPokemons" />
+      </div>
+    </div>
+  </div>
+</main>

@@ -1,0 +1,15 @@
+.pokedex {
+  &__container {
+    margin: 0;
+
+    &__content {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+
+      &__left-side {
+        width: 50%;
+      }
+    }
+  }
+}
